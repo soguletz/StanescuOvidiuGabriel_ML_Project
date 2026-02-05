@@ -51,7 +51,7 @@ preprocessor = ColumnTransformer([
 model = Pipeline([
     ('prep', preprocessor),
     ('clf', XGBClassifier(
-        n_estimators=150,
+        n_estimators=100,
         max_depth=5,
         learning_rate=0.05,
         scale_pos_weight=3,
